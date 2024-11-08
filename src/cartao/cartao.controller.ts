@@ -1,9 +1,17 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { CartaoService } from './cartao.service';
 import { CreateCartaoDto } from './dto/create-cartao.dto';
 import { UpdateCartaoDto } from './dto/update-cartao.dto';
 
-@Controller('cartao')
+@Controller('cartoes')
 export class CartaoController {
   constructor(private readonly cartaoService: CartaoService) {}
 
